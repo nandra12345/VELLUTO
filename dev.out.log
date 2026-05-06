@@ -1,0 +1,19 @@
+
+> apple-web@0.1.0 dev
+> next dev -p 3006
+
+▲ Next.js 16.2.4 (Turbopack)
+- Local:         http://localhost:3006
+- Network:       http://172.16.13.254:3006
+✓ Ready in 1291ms
+Creating turbopack project {
+  dir: 'C:\\Users\\Nandra\\OneDrive\\Documents\\apple web\\apple-web',
+  testMode: true
+}
+
+ GET / 200 in 4.2s (next.js: 3.7s, application-code: 459ms)
+ GET /store 200 in 1034ms (next.js: 886ms, application-code: 149ms)
+ GET /buy/iphone-17-pro 200 in 2.0s (next.js: 1840ms, generate-params: 1050ms, application-code: 203ms)
+ GET /cart 200 in 853ms (next.js: 736ms, application-code: 117ms)
+ GET /buy/bad-slug 200 in 111ms (next.js: 19ms, generate-params: 13ms, application-code: 92ms)
+[?25h

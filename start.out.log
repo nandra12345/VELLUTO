@@ -1,0 +1,8 @@
+
+> apple-web@0.1.0 start
+> next start -p 3005
+
+▲ Next.js 16.2.4
+- Local:         http://localhost:3005
+- Network:       http://172.16.13.254:3005
+✓ Ready in 443ms

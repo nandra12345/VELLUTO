@@ -1,26 +1,68 @@
 @import "tailwindcss";
+@config "../tailwind.config.ts";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --velluto-gold: #B89765;
+  --velluto-ivory: #FBF9F6;
+  --velluto-espresso: #1C1A19;
+
+  --color-canvas: var(--velluto-ivory);
+  --color-ink: var(--velluto-espresso);
+  --color-accent: var(--velluto-gold);
+
+  --font-display: serif;
+  --font-text: sans-serif;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-velluto-gold: var(--velluto-gold);
+  --color-velluto-ivory: var(--velluto-ivory);
+  --color-velluto-espresso: var(--velluto-espresso);
+
+  --font-display: var(--font-display);
+  --font-text: var(--font-text);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@utility no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
   }
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--velluto-ivory);
+  color: var(--velluto-espresso);
+  font-family: var(--font-text);
+  font-size: 17px;
+  line-height: 1.47;
+}
+
+.velluto-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.6rem);
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+.velluto-body {
+  font-family: var(--font-text);
+  font-size: 17px;
+  line-height: 1.47;
 }
